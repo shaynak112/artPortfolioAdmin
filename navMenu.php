@@ -25,7 +25,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
                     <li class="dropdown user-dropdown">
-                        <a href="index.php"><i class="fa fa-user"></i> Dima</a>
+                        <a href="index.php"><i class="fa fa-user"></i> <?php echo $_SESSION['username'] ?> </a>
                     </li>
                 </ul>
                     <!--<li class="dropdown messages-dropdown">
