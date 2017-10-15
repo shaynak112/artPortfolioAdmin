@@ -1,10 +1,23 @@
 <?php
+ob_start();
+session_start();
 
     //include 'header.php';
     //include 'navMenu.php';
     include 'dbConnect.php';
 
 ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108144834-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108144834-1');
+</script>
+
 
 
 	<div id="page-wrapper">
@@ -51,14 +64,17 @@ if(isset($_POST['login']))
 
     foreach($userLogins as $u)
     {
-        if(($username=$u->username) && ($password=$u->password))
+        if(($username==$u->username) && ($password==$u->password))
         {
-            session_start();
+            
             $_SESSION['id']=$u->id;
             $_SESSION['username']=$u->username;
             $_SESSION['role']=$u->role;
+            
 
             header('Location: home.php');
+            exit();
+            ob_end_flush();
         }
 
     }

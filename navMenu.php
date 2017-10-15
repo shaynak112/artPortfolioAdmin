@@ -15,7 +15,7 @@
                     <li class="selected"><a href="index.php"><i class="fa fa-dashboard"></i>  Dashboard</a></li>
                     <li><a href="addNewImage.php"><i class="fa fa-eye"></i> Add New Image</a></li>
                     <li><a href="changeGalleryOrder.php"><i class="fa fa-adjust"></i> Change Gallery Order</a></li>
-                    <li><a href="editInformation.php"><i class="fa fa-crop"></i> Edit Information</a></li>
+                    <li><a href="changeTitle.php"><i class="fa fa-crop"></i> Change Title</a></li>
                     <li><a href="changeHomeImg.php"><i class="fa fa-magic"></i> Change Home Images</a></li>
                     <li><a href="changeFeaturedImg.php"><i class="fa fa-exchange"></i> Change Featured Images</a></li>
                     <li><a href="allImages.php"><i class="fa fa-image"></i> View All Images</a></li>
